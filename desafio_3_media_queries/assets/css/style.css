@@ -1,0 +1,387 @@
+:root {
+    --color-primary-font: #2e2c2a;
+    --color-secondary-font: #efeeee;
+    --color-background: #ffffff;
+    --color-primary: #3d67d0;
+    --color-secondary: #d6ccc2;
+    --color-terciary: #e2e2e2;
+    --color-disable: #c5beb6;
+    --color-border: #c1c1c1;
+    --padding-left: 1rem;
+    --padding-right: 1rem;
+    --gap-grid: 1rem;
+    --border-radius-product: 5px;
+    --height-nav-pages: 5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html, body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: var(--color-primary-font);
+    background-color: var(--color-background);
+}
+
+/*************************************************************/
+/* CONTAINER
+/*************************************************************/
+
+.container {
+    display: grid;
+    grid-template-rows: 3rem 5rem 1fr 5rem;
+    grid-template-columns: 1fr;
+    min-height: 100dvh;
+    grid-template-areas: 
+    "header"
+    "search"
+    "main"
+    "footer";
+}
+
+/*************************************************************/
+/* HEADER
+/*************************************************************/
+
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-inline: 0.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary-font);
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+header .logo-img {
+    width: 1rem;
+    filter: invert(1);
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+header h1 {
+    font-size: 1rem;
+}
+
+header i {
+    font-size: 1.4rem;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--color-secondary-font);
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/*************************************************************/
+/* SEARCH
+/*************************************************************/
+
+section.search-car {
+    grid-area: search;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-terciary);
+}
+
+.form-search {
+    width: 85%;
+}
+
+#option-search {
+    width: 100%;
+    height: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.3rem;
+    background-color: var(--color-background);
+}
+
+/*************************************************************/
+/* MAIN
+/*************************************************************/
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container {  
+    overflow: auto;
+    height: calc(100dvh - 18rem);
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card-car {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 90dvw;
+    height: calc(100dvh - 21rem);
+    border: 1px solid var(--color-terciary);
+    border-radius: 0.5rem;
+    background-color: var(--color-background);
+    padding-block: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card-car:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+
+.card-img {
+    width: 100%;
+    height: 65%;
+    object-fit: contain;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    color: var(--color-disable);
+}
+
+.card-footer b {
+    color: var(--color-primary-font);
+}
+
+.button {
+    background-color: var(--color-primary);
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    text-decoration: none;
+    color: var(--color-secondary-font);
+    border-radius: 0.3rem;
+}
+
+.button:hover {
+    background-color: var(--color-primary);
+    filter: brightness(1.5);
+}
+
+/*************************************************************/
+/* NAV PAGES
+/*************************************************************/
+
+.nav_pages {
+    display: flex;
+    width: 100%;
+    height: var(--height-nav-pages);
+    justify-content:center;
+    align-items: center;
+}
+
+.nav_pages a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--color-border);
+    border-block-end: 1px solid var(--color-border);
+    border-block-start: 1px solid var(--color-border);
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-primary);
+}
+
+.nav_pages a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary-font);
+}
+
+a.start {
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+a.end {
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-right: 1px solid var(--color-border);
+}
+
+/*************************************************************/
+/* FOOTER
+/*************************************************************/
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary-font);
+    text-align: center;
+}
+
+.rrss {
+    display: flex;
+    gap: 0.5rem;
+}
+
+footer i {
+    font-size: 1.2rem;
+}
+
+
+/*************************************************************/
+/* BREAKPOINT - TABLET
+/*************************************************************/
+
+@media screen and
+(min-width: 576px) and (max-width: 992px) {
+
+    .container {
+        grid-template-rows: 3rem 1fr 5rem;
+        grid-template-columns: 12rem 1fr;
+        grid-template-areas: 
+        "header header"
+        "search main"
+        "footer footer";
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    section.search-car {
+        justify-content:flex-start;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .main-container {  
+        height: calc(100dvh - 13rem);
+    }
+
+    .card-car {
+        width: calc((100% - 12rem) / 2);
+        min-width: 15rem;
+        height: calc((100dvh - 20rem) / 2);
+        min-height: 17rem;
+    }
+}
+
+@media screen and
+(min-width: 576px) and (max-width: 992px) and (min-height: 700px) {
+    .card-car {
+        width: calc((100% - 12rem) / 2);
+        min-width: 15rem;
+        height: 35dvh;
+    }
+}
+
+
+/*************************************************************/
+/* BREAKPOINT - PC
+/*************************************************************/
+
+@media screen and
+(min-width: 992px) {
+
+    .container {
+        grid-template-rows: 6rem 1fr 5rem;
+        grid-template-columns: 12rem 1fr;
+        grid-template-areas: 
+        "header search"
+        "header main"
+        "footer main";
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
+        padding-top: 1rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    section.search-car {
+        justify-content:flex-start;
+        padding-top: 1rem;
+        gap: 1rem;
+    }
+
+    .main-container { 
+        height: calc(100dvh - 11rem);
+    }
+
+    .card-car {
+        width: 18rem;
+        height: calc((100dvh - 16rem) / 2);
+        min-height: 20rem;
+    }
+
+    footer {
+        padding-bottom: 1rem;
+    }
+}
