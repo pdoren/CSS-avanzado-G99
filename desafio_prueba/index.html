@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Prueba</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="assets/imgs/logo_white.png" />
+        <ul class="menu">
+          <li><a href="#about">Inicio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </header>
+      <main>
+        <section class="about" id="about">
+          <h2>Quienes somos?</h2>
+          <p>
+            Somos un equipo de profesionales dedicados al desarrollo de
+            soluciones de automatización industrial inteligente. Nos gusta
+            abordar desafíos de diversas complejidades, proponer soluciones
+            efectivas y desplegarlas minuciosamente. En cada solución utilizamos
+            tecnologías de reconocidas marcas mundiales y les damos vida con
+            software diseñado a la medida. Nos sentimos profundamente
+            comprometidos con el desarrollo económico y tecnológico de Chile.
+            Esto nos motiva a ser parte activa de la inminente revolución
+            industrial inteligente, como catalizadores de transformaciones
+            digitales y articuladores entre las nuevas tecnologías de
+            automatización y el sector productivo del país.
+          </p>
+        </section>
+        <section class="projects" id="projects">
+          <h2>Proyectos</h2>
+          <!-- ====== Galeria ====== -->
+          <section class="galeria" aria-label="Galería de fotos">
+            <h2 class="sr-only">Galería de fotos</h2>
+
+            <div class="carousel" tabindex="0">
+              <!-- Slide 1 -->
+              <figure class="slide">
+                <a href="#img1" class="card">
+                  <img
+                    src="assets/imgs/projects/tst.png"
+                    alt="Proyecto Mecanizado Robotico"
+                  />
+                  <figcaption>Mecanizado de barras robótico</figcaption>
+                </a>
+              </figure>
+
+              <!-- Slide 2 -->
+              <figure class="slide">
+                <a href="#img2" class="card">
+                  <img
+                    src="assets/imgs/projects/lucchetti.png"
+                    alt="Robot Paletizador"
+                  />
+                  <figcaption>Robot Paletizador de Cajas de Lazañas</figcaption>
+                </a>
+              </figure>
+
+              <!-- Slide 3 -->
+              <figure class="slide">
+                <a href="#img3" class="card">
+                  <img
+                    src="assets/imgs/projects/billetes.png"
+                    alt="Procesamiento de Billetes"
+                  />
+                  <figcaption>Procesamiento de Billetes</figcaption>
+                </a>
+              </figure>
+
+              <!-- Slide 4 -->
+              <figure class="slide">
+                <a href="#img4" class="card">
+                  <img
+                    src="assets/imgs/projects/wenco 1.png"
+                    alt="Armadora de canastos"
+                  />
+                  <figcaption>Armadora de Canastos Plásticos</figcaption>
+                </a>
+              </figure>
+
+              <!-- Slide 5 -->
+              <figure class="slide">
+                <a href="#img5" class="card">
+                  <img
+                    src="assets/imgs/projects/robot cormecanica.png"
+                    alt="Mecanizado en torno robotizado"
+                  />
+                  <figcaption>Mecanizado en torno robotizado</figcaption>
+                </a>
+              </figure>
+            </div>
+          </section>
+        </section>
+        <section class="services" id="services">
+          <h2>Servicios</h2>
+          <div class="services-content">
+            <div class="card-service">
+              <img
+                src="assets/imgs/mantenimiento-industrial.jpeg"
+                alt="Mantenimiento Industrial"
+              />
+              <div class="card-service-content">
+                <h3>MANTENIMIENTO INDUSTRIAL</h3>
+                <p>
+                  Mundos Virtuales ofrece mantenimiento industrial para
+                  maximizar disponibilidad y confiabilidad: planes
+                  preventivos/predictivos y correctivo de emergencia para robots
+                  FANUC, PLC/HMI Siemens, variadores, conveyors e
+                  instrumentación. Implementamos GMAO/CMMS, KPI (MTBF/MTTR),
+                  gestión de repuestos, lubricación y backups de PLC/robot con
+                  LOTO. Ofrecemos contratos con SLA, informes en 72 h y
+                  proyectos RCM/AMFE para reducir fallas y costos, elevando
+                  productividad y seguridad.
+                </p>
+                <a href="#" class="button">Ver más</a>
+              </div>
+            </div>
+            <div class="card-service">
+              <img
+                src="assets/imgs/automatizacion-industrial.jpeg"
+                alt="Automatización Industrial"
+              />
+              <div class="card-service-content">
+                <h3>AUTOMATIZACIÓN INDUSTRIAL</h3>
+                <p>
+                  Mundos Virtuales ofrece automatización industrial llave en
+                  mano: diagnosticamos y diseñamos celdas/líneas, integramos
+                  robots (FANUC), PLC/HMI Siemens, visión, conveyors y
+                  seguridad, y desarrollamos software para control, trazabilidad
+                  y OEE. Ejecutamos ingeniería, fabricación, puesta en marcha,
+                  capacitación y mantenimiento, elevando productividad y
+                  calidad, reduciendo ciclos/paradas y asegurando operación
+                  segura y escalable (Industria 4.0).
+                </p>
+                <a href="#" class="button">Ver más</a>
+              </div>
+            </div>
+            <div class="card-service">
+              <img
+                src="assets/imgs/robotica-industrial.jpeg"
+                alt="Robótica Industrial"
+              />
+              <div class="card-service-content">
+                <h3>ROBÓTICA INDUSTRIAL</h3>
+                <p>
+                  En Mundos Virtuales somos representantes e integradores
+                  oficiales de los robots industriales Fanuc en Chile. Junto con
+                  ello, representamos la marca Schunk, la cual ofrece diversas
+                  soluciones de sistemas de sujeción y componentes para
+                  automatización. Desarrollamos aplicaciones de automatización
+                  tradicional y soluciones particulares adaptadas a las
+                  necesidades de nuestros clientes.
+                </p>
+                <a href="#" class="button">Ver más</a>
+              </div>
+            </div>
+            <div class="card-service">
+              <img
+                src="assets/imgs/automatización-efectivo.webp"
+                alt="Automatización Gestión Efectivo"
+              />
+              <div class="card-service-content">
+                <h3>AUTOMATIZACIÓN GESTIÓN EFECTIVO</h3>
+                <p>
+                  Contamos con una vasta experiencia en el área financiera, que
+                  nos permite entregar a nuestros clientes diversas soluciones
+                  de automatización para sus procesos de gestión de efectivo.
+                  Aumentamos la productividad de tu negocio al tiempo que
+                  minimizas costos y tienes la oportunidad de brindar más valor
+                  a la experiencia de tus clientes.
+                </p>
+                <a href="#" class="button">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container footer__top">
+          <!-- Redes sociales -->
+          <section class="social" aria-label="Redes sociales">
+            <h2 class="footer__title">Síguenos</h2>
+            <ul class="social__list">
+              <li>
+                <a href="#" aria-label="X / Twitter"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="GitHub"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Facebook"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Datos de contacto -->
+          <section class="contacto" aria-label="Datos de contacto">
+            <h2 class="footer__title">Contacto</h2>
+            <ul class="contacto__list">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Miraflores 383, piso 22, Santiago, CL</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+56912345678">+56 9 1234 5678</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:contacto@mundos-virtuales.com"
+                  >contacto@mundos-virtuales.com</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <!-- Suscripción -->
+          <section
+            class="suscripcion"
+            aria-label="Suscripción a novedades"
+            id="contact"
+          >
+            <h2 class="footer__title">Suscríbete</h2>
+            <p class="suscripcion__desc">
+              Recibe novedades y guías en tu correo.
+            </p>
+            <form class="suscripcion__form" action="#" method="post" novalidate>
+              <label for="email" class="sr-only">Correo electrónico</label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-at" aria-hidden="true"></i>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="tu@correo.com"
+                  required
+                />
+              </div>
+              <button type="submit">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                Suscribirme
+              </button>
+              <small class="suscripcion__legal"
+                >Al suscribirte aceptas nuestra política de privacidad.</small
+              >
+            </form>
+          </section>
+        </div>
+
+        <div class="container footer__bottom">
+          <p>© 2025 Mundos Virtuales SpA. Todos los derechos reservados.</p>
+          <ul class="legal" aria-label="Enlaces legales">
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/c0caa9667d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
